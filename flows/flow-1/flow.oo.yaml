@@ -1,2 +1,17 @@
 nodes:
-  []
+  - node_id: speech-to-text#1
+    title: "Speech To Text #1"
+    inputs_from:
+      - handle: audio
+    task: self::speech-to-text
+  - node_id: text-to-audio#1
+    title: "Text To Audio #1"
+    inputs_from:
+      - handle: content
+      - handle: file_path
+        value: /oomol-driver/oomol-storage
+      - handle: timbre
+        value: anna
+      - handle: name
+        value: null
+    task: self::text-to-audio
