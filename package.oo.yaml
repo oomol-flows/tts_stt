@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   bootstrap: |
     npm install
@@ -6,7 +6,7 @@ scripts:
 dependencies:
 icon: ":carbon:ibm-watson-speech-to-text:currentColor:"
 name: tts_stt
-releaseNotes: init
+releaseNotes: and github code
 displayName: TTS & STT
 description: Various feature sets of the Siliconflow platform
-repository: ""
+repository: "https://github.com/oomol-flows/tts_stt"
