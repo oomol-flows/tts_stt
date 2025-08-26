@@ -1,0 +1,45 @@
+inputs_def:
+  - handle: content
+    description: Input
+    json_schema:
+      type: string
+      ui:widget: text
+  - handle: file_path
+    json_schema:
+      type: string
+      ui:widget: dir
+    value: /oomol-driver/oomol-storage
+    nullable: false
+  - handle: timbre
+    json_schema:
+      enum:
+        - anna
+        - alex
+        - bella
+      ui:options:
+        labels:
+          - anna
+          - alex
+          - bella
+    value: anna
+  - group: Optional
+  - handle: name
+    json_schema:
+      type: string
+    value:
+    nullable: true
+outputs_def:
+  - handle: audio_address
+    json_schema:
+      type: string
+      ui:widget: file
+ui:
+  default_width: 450
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py
+title: Text To Audio
+icon: ":carbon:mobile-audio:"
+description: Text-to-speech module that converts input text into generated speech audio
