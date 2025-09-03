@@ -38,8 +38,4 @@ def main(params: Inputs, context: Context) -> Outputs:
         response_format="mp3",
     ) as response:
         response.stream_to_file(speech_file_path)
-    context.preview({
-        "type": "audio",
-        "data": speech_file_path,
-    })
     return {"audio_address": speech_file_path}

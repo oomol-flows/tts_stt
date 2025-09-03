@@ -24,9 +24,4 @@ def main(params: Inputs, context: Context) -> Outputs:
             file=audio_file
         )
     
-    context.preview({
-        "type": "markdown",
-        "data": transcription.text,
-    })
-    
     return {"text": transcription.text}
