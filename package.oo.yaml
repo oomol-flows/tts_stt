@@ -1,12 +1,15 @@
-version: 0.0.5
+version: 0.0.6
 scripts:
   bootstrap: |
     npm install
     poetry install --no-root
 dependencies:
+  {}
 icon: ":carbon:ibm-watson-speech-to-text:currentColor:"
 name: tts_stt
 releaseNotes: update block
 displayName: TTS & STT
-description: Various feature sets of the Siliconflow platform
+description: A powerful collection of audio processing blocks that convert
+  between text and speech, making it easy to create voice-enabled applications
+  without any programming knowledge.
 repository: "https://github.com/oomol-flows/tts_stt"
