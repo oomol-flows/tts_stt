@@ -1,15 +1,13 @@
-version: 0.0.6
+version: 0.0.7
 scripts:
   bootstrap: |
     npm install
     poetry install --no-root
 dependencies:
   {}
-icon: ":carbon:ibm-watson-speech-to-text:currentColor:"
+icon: "./icon.png"
 name: tts_stt
 releaseNotes: update block
 displayName: TTS & STT
-description: A powerful collection of audio processing blocks that convert
-  between text and speech, making it easy to create voice-enabled applications
-  without any programming knowledge.
+description: "%a-powerful-collection-of-audio-processing-blocks-that-convert-be%"
 repository: "https://github.com/oomol-flows/tts_stt"
